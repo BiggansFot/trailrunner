@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Run Robot and Post Test') {
             steps{
-                bat scripts: "robot --nostatusrc Selenium/test.robot", returnStatus: true
+                bat script: "robot --nostatusrc Selenium/test.robot", returnStatus: true
             }
             post {
                 always {
