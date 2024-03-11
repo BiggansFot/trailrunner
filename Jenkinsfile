@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/BiggansFot/trailrunner.git'
+                git branch: 'b1', url: 'https://github.com/BiggansFot/trailrunner.git'
                 echo 'Checking for updates in branch: ${branch}'
             }
         }
