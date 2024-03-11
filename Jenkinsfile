@@ -25,7 +25,7 @@ pipeline {
                         execPattern: 'target/*.exec',
                         classPattern: 'target/classes',
                         sourcePattern: 'src/main/java',
-                        exclusioonPattern: 'src/test*'
+                        exclusionPattern: 'src/test*'
                     )
                     junit '**/TEST*.xml'
                 }
