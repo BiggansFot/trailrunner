@@ -4,12 +4,7 @@ pipeline {
         choice(description: 'Select branch.', name: 'branch', choices: 'main\nb1')
     }
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'b1', url: 'https://github.com/BiggansFot/trailrunner.git'
-                echo 'Checking for updates in branch: ${branch}'
-            }
-        }
+        
         stage('Build') {
             steps{
                 bat "mvn compile"
