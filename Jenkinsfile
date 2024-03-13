@@ -1,16 +1,33 @@
 pipeline {
     agent any
-    parameters {
-        choice(description: 'Select branch.', name: 'branch', choices: 'main\nb1')
+ 
+   parameters {
+        choice(
+            name: 'BRANCH',
+            choices: ['main', 'b1'],
+            description: 'Select the branch to build'
+        )
     }
+ 
     stages {
-        
-        stage('Build') {
-            steps{
-                bat "mvn compile"
+ 
+        stage('checkout') {
+            steps {
+                script {
+                    // Use the selected branch from the parameter
+                    def selectedBranch = params.BRANCH ?: 'main'
+                    checkout([$class: 'GitSCM', 
+                             branches: [[name: "*/${selectedBranch}"]],
+                             userRemoteConfigs: [[url: 'https://github.com/BiggansFot/trailrunner.git']]])
+                }
             }
-        }
-        stage('Test') {
+       }   
+       stage('build'){
+           steps{
+               bat "mvn compile"
+           }
+       }
+       stage('Test') {
             steps{
                 bat "mvn test"
             }
@@ -38,3 +55,5 @@ pipeline {
         }
     }
 }
+
+
