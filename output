@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project>
+    <Type>Testresults</Type>
+    <test>
+        <No>1</No>
+        <Name>Create user</Name>
+    </test>
+    <test>
+        <No>2</No>
+        <Name>Using Wrong format for email when creating user</Name>
+    </test>
+    <test>
+        <No>3</No>
+        <Name>Sort by car and book</Name>
+    </test>
+    <test>
+        <No>3</No>
+        <Name>Logging in with wrong password</Name>
+    </test>
+    <test>
+        <No>3</No>
+        <Name>See booking history</Name>
+    </test>
+    <test>
+        <No>3</No>
+        <Name>Rent a car</Name>
+    </test>
+</project>
