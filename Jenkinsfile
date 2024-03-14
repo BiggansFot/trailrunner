@@ -29,7 +29,7 @@ pipeline {
        }
        stage('Test') {
             steps{
-                bat "mvn test"
+                sh "mvn test"
             }
             post {
                 always {
@@ -45,7 +45,7 @@ pipeline {
         }
         stage('Run Robot and Post Test') {
             steps{
-                bat script: "robot --nostatusrc Selenium/test.robot", returnStatus: true
+                sh script: "robot --nostatusrc Selenium/test.robot", returnStatus: true
             }
             post {
                 always {
