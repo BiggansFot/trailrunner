@@ -26,11 +26,11 @@ Create user
     Click Button    //button[@id='createUser']
     Input Text    //input[@id='name']    ${name}
     Input Text    //input[@id='last']    ${surname}
-    Input Text    //input[@id='phone']    0701234555
-    Input Text    //input[@id='emailCreate']    email12@gmail.se
-    Input Text    //input[@id='confirmEmail']    email12@gmail.se
-    Input Text    //input[@id='passwordCreate']    passwordet
-    Input Text    //input[@id='confirmPassword']    passwordet
+    Input Text    //input[@id='phone']    0701234888
+    Input Text    //input[@id='emailCreate']    email34@gmail.se
+    Input Text    //input[@id='confirmEmail']    email34@gmail.se
+    Input Text    //input[@id='passwordCreate']    passwordets
+    Input Text    //input[@id='confirmPassword']    passwordets
     Click Button    //button[@id='create']
     Wait Until Page Contains Element    //button[@id='mypage']
     Click Button    //button[@id='logout']
