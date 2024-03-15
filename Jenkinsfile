@@ -45,7 +45,7 @@ pipeline {
         }
         stage('Run Robot and Post Test') {
             steps{
-                sh script: "robot --nostatusrc Selenium/test.robot", returnStatus: true
+                sh script: 'C:/Users/ersha/.jenkins/workspace/Pär_Ershag/Selenium/test.robot', returnStatus: true
             }
             post {
                 always {
