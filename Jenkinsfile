@@ -49,7 +49,7 @@ pipeline {
             }
             post {
                 always {
-                    robot outputPath: '.', logFileName: 'log.html', outputFileName: 'output.xml', reportFileName: 'report.hml', passThreshold: 100.0, unstableThreshold: 70.0, onlyCritical: false
+                    robot outputPath: 'C:/Users/ersha/.jenkins/workspace/Pär_Ershag', passThreshold: 100.0, unstableThreshold: 70.0, onlyCritical: false
                 }
             }
         }
