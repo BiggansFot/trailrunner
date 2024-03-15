@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation   Test för infotivs car rental
 Library    SeleniumLibrary
-#Suite Setup    Open browser to start
+#Suite Setup    Open Browser To Start
 
 *** Variables ***
 ${url}     http://rental8.infotiv.net/
@@ -26,9 +26,9 @@ Create user
     Click Button    //button[@id='createUser']
     Input Text    //input[@id='name']    ${name}
     Input Text    //input[@id='last']    ${surname}
-    Input Text    //input[@id='phone']    0701234888
-    Input Text    //input[@id='emailCreate']    email34@gmail.se
-    Input Text    //input[@id='confirmEmail']    email34@gmail.se
+    Input Text    //input[@id='phone']    0701234889
+    Input Text    //input[@id='emailCreate']    email343@gmail.se
+    Input Text    //input[@id='confirmEmail']    email343@gmail.se
     Input Text    //input[@id='passwordCreate']    passwordets
     Input Text    //input[@id='confirmPassword']    passwordets
     Click Button    //button[@id='create']
