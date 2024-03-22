@@ -46,7 +46,7 @@ Using Wrong format for email when creating user
     Input Text    //input[@id='phone']    0707123456
     Input Text    //input[@id='emailCreate']    jklasd@.se
     Input Text    //input[@id='confirmEmail']    jklasd@.se
-    Input Text    //input[@id='passwordCreate']    ${password}
+    Input Text    //input[@id='passwordCreate']    pärtest
     Input Text    //input[@id='confirmPassword']    ${password}
     Click Button    //button[@id='create']
     Wait Until Page Does Not Contain Element    //button[@id='logout']
