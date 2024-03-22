@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Run Robot and Post Test') {
             steps{
-                sh 'python -m robot C:/Users/ersha/.jenkins/workspace/Pär_Ershag/Selenium/test.robot'
+                sh 'python -m robot C:/Users/ersha/.jenkins/workspace/Pär_Ershag/Selenium/test.robot', returnStatus: true
             }
             post {
                 always {
