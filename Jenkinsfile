@@ -28,7 +28,7 @@ pipeline {
             }
             post {
                 always {
-                    robot outputPath: '&{WORKSPACE}/Pär_Ershag@2', passThreshold: 100.0, unstableThreshold: 70.0, onlyCritical: false
+                    robot outputPath: '${WORKSPACE}', passThreshold: 100.0, unstableThreshold: 70.0, onlyCritical: false
                 }
             }
         }
