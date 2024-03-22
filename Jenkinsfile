@@ -24,11 +24,11 @@ pipeline {
         }
         stage('Run Robot and Post Test') {
             steps{
-                sh script:'python -m robot C:/Users/ersha/.jenkins/workspace/Pär_Ershag/Selenium/test.robot', returnStatus: true
+                sh script:'cd ${WORKSPACE} && python -m robot Pär_Ershag/Selenium/test.robot', returnStatus: true
             }
             post {
                 always {
-                    robot outputPath: 'C:/Users/ersha/.jenkins/workspace/Pär_Ershag@2', passThreshold: 100.0, unstableThreshold: 70.0, onlyCritical: false
+                    robot outputPath: '&{WORKSPACE}/Pär_Ershag@2', passThreshold: 100.0, unstableThreshold: 70.0, onlyCritical: false
                 }
             }
         }
