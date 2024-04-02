@@ -12,8 +12,8 @@ ${name}    par
 ${surname}    ers
 ${number}    0701234562
 ${email}    blub1@gmail.se
-${startDate}    327
-${endDate}    327
+${startDate}    420
+${endDate}    420
 ${cardNumber}    1234567890987654
 ${cardHolder}    Pär Ershag
 ${cvc}    476
@@ -26,9 +26,9 @@ Create user
     Click Button    //button[@id='createUser']
     Input Text    //input[@id='name']    ${name}
     Input Text    //input[@id='last']    ${surname}
-    Input Text    //input[@id='phone']    0701238227
-    Input Text    //input[@id='emailCreate']    email3811@gmail.se
-    Input Text    //input[@id='confirmEmail']    email3811@gmail.se
+    Input Text    //input[@id='phone']    0701237927
+    Input Text    //input[@id='emailCreate']    email9811@gmail.se
+    Input Text    //input[@id='confirmEmail']    email9811@gmail.se
     Input Text    //input[@id='passwordCreate']    passwordets
     Input Text    //input[@id='confirmPassword']    passwordets
     Click Button    //button[@id='create']
