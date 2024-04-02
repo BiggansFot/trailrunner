@@ -26,9 +26,9 @@ Create user
     Click Button    //button[@id='createUser']
     Input Text    //input[@id='name']    ${name}
     Input Text    //input[@id='last']    ${surname}
-    Input Text    //input[@id='phone']    0701234227
-    Input Text    //input[@id='emailCreate']    email3411@gmail.se
-    Input Text    //input[@id='confirmEmail']    email3411@gmail.se
+    Input Text    //input[@id='phone']    0701237227
+    Input Text    //input[@id='emailCreate']    email311@gmail.se
+    Input Text    //input[@id='confirmEmail']    email311@gmail.se
     Input Text    //input[@id='passwordCreate']    passwordets
     Input Text    //input[@id='confirmPassword']    passwordets
     Click Button    //button[@id='create']
@@ -91,6 +91,7 @@ See booking history
 
 Rent a car
     [Tags]    VG_test
+    [Setup]    Open Browser To Start
     Given User have logged in    ${url}    ${email}    ${password}
     When User selects date and car    ${startDate}    ${endDate}
     And User selects payment option    ${cardNumber}    ${cardHolder}    ${cvc}
@@ -106,7 +107,6 @@ User have logged in
     [Documentation]    Opens browser and navigates to website and logs in
     [Tags]    Test for logging in to car rental
     [Arguments]    ${url}    ${email}    ${password}
-    [Setup]    Open Browser To Start
     Input Text    //input[@id='email']    ${email}
     Input Text    //input[@id='password']    ${password}
     Click Button    //button[@id='login']
