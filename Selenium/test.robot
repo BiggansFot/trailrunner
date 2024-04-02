@@ -26,9 +26,9 @@ Create user
     Click Button    //button[@id='createUser']
     Input Text    //input[@id='name']    ${name}
     Input Text    //input[@id='last']    ${surname}
-    Input Text    //input[@id='phone']    0701237227
-    Input Text    //input[@id='emailCreate']    email311@gmail.se
-    Input Text    //input[@id='confirmEmail']    email311@gmail.se
+    Input Text    //input[@id='phone']    0701238227
+    Input Text    //input[@id='emailCreate']    email3811@gmail.se
+    Input Text    //input[@id='confirmEmail']    email3811@gmail.se
     Input Text    //input[@id='passwordCreate']    passwordets
     Input Text    //input[@id='confirmPassword']    passwordets
     Click Button    //button[@id='create']
